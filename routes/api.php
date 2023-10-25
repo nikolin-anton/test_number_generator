@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NumberController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +14,7 @@ use App\Http\Controllers\NumberController;
 |
 */
 
-Route::prefix('v1')->group(function (){
-    Route::apiResource('/numbers', NumberController::class);
+Route::prefix('v1')->group(function () {
+    Route::post('/numbers', [NumberController::class, 'generate']);
+    Route::get('numbers/{number}', [NumberController::class, 'retrieve']);
 });

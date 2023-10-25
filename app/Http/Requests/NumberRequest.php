@@ -32,7 +32,7 @@ class NumberRequest extends FormRequest
     public function prepareForValidation()
     {
         return $this->merge([
-            'count' => request('count') ?? (int) config('app.count')
+            'count' => request('count') ?? (int) config('app.count'),
         ]);
     }
 }

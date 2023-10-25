@@ -185,6 +185,6 @@ return [
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
 
-    'count' => env('COUNT_DEFAULT',5),
+    'count' => env('COUNT_DEFAULT', 5),
 
 ];
