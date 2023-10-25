@@ -22,7 +22,7 @@ class NumberRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'count' => ['nullable', 'integer']
+            'count' => ['nullable', 'integer'],
         ];
     }
 

@@ -17,7 +17,7 @@ class NumberFactory extends Factory
     public function definition(): array
     {
         return [
-            'number' => $this->faker->randomNumber(8, true)
+            'number' => $this->faker->randomNumber(8, true),
         ];
     }
 }

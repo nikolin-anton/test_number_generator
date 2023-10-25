@@ -20,7 +20,8 @@ class NumberController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * @param NumberRequest $request
+     * @return NumberResource
      */
     public function store(NumberRequest $request): NumberResource
     {
@@ -40,7 +41,9 @@ class NumberController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * @param NumberRequest $request
+     * @param Number $number
+     * @return NumberResource
      */
     public function update(NumberRequest $request, Number $number)
     {

@@ -13,6 +13,6 @@ class Number extends Model
      * @var string[]
      */
     protected $fillable = [
-        'number'
+        'number',
     ];
 }
